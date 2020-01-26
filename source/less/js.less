@@ -1,0 +1,23 @@
+.popup {
+    display: none;
+}
+
+.js--show-form {
+    position: fixed;
+    display: block;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+
+    & .form--registration{
+        position: fixed;
+        z-index: 5;
+        left: calc(50vw - 165px);
+        top: calc(50vh - 206px);
+    }
+}

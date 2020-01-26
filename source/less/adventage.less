@@ -1,0 +1,113 @@
+.advantage {
+    padding: 20px 0;
+}
+
+.advantage--message {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.advantage--list-name {
+    margin: 10px 0;
+    margin-top: 40px;
+
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.advantage--list {
+    display: flex;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+
+    list-style: none;
+}
+
+.advantage--item a{
+    display: block;
+    height: 24px; /* for mobile version*/
+}
+
+.advantage--item__first {
+    width: 18.4%;
+
+    & a {
+        background: url(../img/icon_cnn.png) no-repeat left center;
+        background-size: contain;
+    }
+}
+
+.advantage--item__second {
+    width: 27.3%;
+
+    & a {
+        background: url(../img/icon_ft_dot_com.png) no-repeat center center;
+        background-size: contain;
+    }
+}
+
+.advantage--item__third {
+    width: 27.6%;
+
+    & a {
+        background: url(../img/icon_time.png) no-repeat center center;
+        background-size: contain;
+    }
+}
+
+.advantage--item__fourth {
+    width: 26.7%;
+
+    & a {
+        background: url(../img/icon_forbes.png) no-repeat right center;
+        background-size: contain;
+    }
+}
+
+@media (min-width: 470px) {
+    .advantage--list {
+        width: 430px;
+    }
+
+    .advantage--item a{
+        display: block;
+        height: 34px;
+    }
+
+    .advantage--button {
+        width: 300px;
+    }
+}
+
+@media (min-width: 640px) {
+    .advantage {
+        margin: 0 auto;
+        width: 430px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .advantage {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 68px 0;
+    }
+
+    .advantage--message {
+        padding: 27px 0;
+    }
+
+    .advantage--list-name {
+        margin: 0;
+        margin-top: auto;
+    }
+
+    .advantage--list {
+        margin: 0;
+        margin-top: 10px;
+    }
+}

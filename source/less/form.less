@@ -1,0 +1,164 @@
+.form {
+    margin: 0;
+    padding: 20px;
+
+    color: #ffffff;
+    background-color: #2e0e85;
+}
+
+.form--registration {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px 15px;
+    padding-bottom: 40px;
+
+    width: 330px;
+
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.form--step {
+    margin: 0 auto;
+    padding: 5px 12px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #ffffff;
+    background-color: #1b0195;
+
+    border-radius: 15px;
+
+    & span {
+        font-weight: 700;
+    }
+}
+
+.form--messsage {
+    margin: 0 auto;
+    padding: 20px;
+
+    font-size: 27px;
+    line-height: 31px;
+    font-weight: 700;
+    text-align: center;
+
+    & span {
+        font-size: 34px;
+        font-weight: 700;
+    }
+}
+
+.form--input {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 13px 17px;
+
+    width: 300px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    background: #eceef1;
+    border: none;
+    border-radius: 17px;
+}
+
+.form--button {
+    margin-top: 4px;
+}
+
+.form--small-message {
+    position: relative;
+    margin: 0 auto;
+    padding: 15px 0;
+    padding-left: 50px;
+
+    width: 250px;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: calc(50% - 13px);
+        left: 0;
+
+        width: 40px;
+        height: 25px;
+
+        background: linear-gradient(to top, #c7af2b 50%, #2d4f99 50%);
+        border-radius: 12px;
+    }
+
+    & span {
+        color: #fd3277;
+    }
+}
+
+.form--bid-ask-container {
+    margin: 0 auto;
+    width: 330px;
+}
+
+.form--bid-ask {
+    margin: 0;
+
+    font-size: 24px;
+    line-height: 22px;
+
+    & span {
+        color: #fd3277;
+    }
+}
+
+.form--icons {
+    display: flex;
+    margin: 0;
+    margin-top: 13px;
+    padding: 0;
+
+    list-style: none;
+}
+
+.form--item {
+    display: block;
+
+    width: 25%;
+    height: 26px;
+
+    & a {
+        display: block;
+        width: 100%;
+        height: 26px;
+    }
+}
+
+.form--item__first a {
+    background: url(../img/icon_bitgo.png) no-repeat left center;
+}
+
+.form--item__second a {
+    background: url(../img/icon_mcafee.png) no-repeat center center;
+}
+
+.form--item__third a {
+    background: url(../img/icon_norton.png) no-repeat center center;
+}
+
+.form--item__fourth a {
+    background: url(../img/icon_secure_trading.png) no-repeat center center;
+}
+
+@media (min-width: 1100px) {
+    .form {
+        margin: 0;
+        padding: 0;
+
+        background: none;
+    }
+}

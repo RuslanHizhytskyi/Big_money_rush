@@ -1,0 +1,121 @@
+html,
+body { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+}
+
+a { 
+    text-decoration: none;
+    font: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 375px;
+
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.block_1 {
+    padding-bottom: 20px; /*mobile size*/
+
+    background-color: #2e0e85;
+}
+
+.block_2 {
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+.section-header {
+    margin: 0;
+    padding: 0;
+
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.button {
+    padding: 18px 10px;
+
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+
+    color: #ffffff;
+    background: linear-gradient(to bottom, #fd3675, #ff6a52);
+    border: none;
+    border-radius: 24px;
+}
+
+@media (min-width: 640px) {
+    body {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .section-header {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .block_1 {
+        padding: 0; 
+
+        background: #000000 url(../img/background_block_1.jpg) repeat-x center top;
+    }
+
+    .block_1--container,
+    .block_2 {
+        margin: 0 auto;
+        padding: 0;
+        width: 1030px;
+    }
+
+    .block_2 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .index-main {
+        display: flex;
+        justify-content: space-between;
+
+        padding-bottom: 66px;
+    }
+}
